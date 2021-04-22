@@ -1,8 +1,37 @@
+.nav-bar {
+  background: linear-gradient(-90deg, #4e0261, #1B023A, #4e0261);
+  height: 150px;
+  margin-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.brand {
+  font-family: cursive;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 133px;
+  /* identical to box height */
+  color: #F9B60A;
+}
+
+b {
+  color: #B31107;
+}
+
 .game {
   display: flex;
   flex-direction: row;
 }
 
 .game-info {
-  margin-left: 20px;
+  margin-left: 80px;
+  margin-right: 60px;
+  color: #fff;
+  font-size: 30px;
+}
+
+ol, li {
+  padding-left: 30px;
 }

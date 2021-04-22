@@ -4,7 +4,7 @@ import { calculateWinner } from './components/Winner';
 import './Game.css';
 
 class Game extends React.Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -50,7 +50,13 @@ class Game extends React.Component {
       'Go to game start';
       return (
         <li key={move}>
-          <button onClick={() => this.jumpTo(move)}>
+          <button onClick={() => this.jumpTo(move)} 
+            style={{
+              color: 'white', 
+              backgroundColor: '#1B023A',
+              fontSize: 20
+            }}
+          >
             {desc}
           </button>
         </li>
@@ -65,17 +71,25 @@ class Game extends React.Component {
     }
 
     return (
-      <div className="game" data-testid="tic-game">
-        <div className="game-board">
-          <Board 
-            squares={current.squares}
-            onClick={(i) => this.handleClick(i)}
-          />
+      <div data-testid="tic-game">
+        <div className="nav-bar">
+          <div className="brand">
+            T<b>I</b>C <b>T</b>A<b>C</b> T<b>O</b>E
+          </div>
         </div>
-        <div className="game-info">
-          <div>{status}</div>
-          <ol>{moves}</ol>
-        </div>
+        <div className="game">
+          
+          <div className="game-info">
+            <div>{status}</div>
+            <ol>{moves}</ol>
+          </div>
+          <div className="game-board">
+            <Board 
+              squares={current.squares}
+              onClick={(i) => this.handleClick(i)}
+            />
+          </div>
+      </div>
       </div>
     );
   }
