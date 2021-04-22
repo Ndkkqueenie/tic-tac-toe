@@ -3,6 +3,6 @@ import Game from './Game';
 
 test('renders game', () => {
   render(<Game />);
-  const linkElement = screen.getByTestId("tic-game");
-  expect(linkElement).toBeInTheDocument();
+  const gameElement = screen.getByTestId("tic-game");
+  expect(gameElement).toBeInTheDocument();
 });
