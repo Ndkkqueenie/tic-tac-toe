@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Tic Tac Toe
 
 This project is a Tic Tac Toe game inspired by [Dan Abramov](https://codepen.io/gaearon/pen/oWWQNa?editors=0010).
 It was Bootstrap with [Create React App](https://github.com/facebook/create-react-app).
